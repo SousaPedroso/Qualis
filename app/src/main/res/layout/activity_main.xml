@@ -2,17 +2,70 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_search"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_background"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <Button
+        android:id="@+id/button_periodicos_section"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:width="132dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/content_periodicos_section"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
 
+    <Button
+        android:id="@+id/button_conferencias_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button_periodicos_section"
+        android:width="139dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/content_conferencias_section"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_periodicos_section"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/button_correlacao_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:width="141dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/content_correlacao_section"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_conferencias_section"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

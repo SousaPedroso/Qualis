@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Qualis</string>
+    <string name="content_filtro">Filtro</string>
+    <string name="content_periodicos_section">Periódicos</string>
+    <string name="content_conferencias_section">CONFERÊNCIAS</string>
+    <string name="content_correlacao_section">CORRELAÇÃO COM + 1 ÁREA</string>
 </resources>
