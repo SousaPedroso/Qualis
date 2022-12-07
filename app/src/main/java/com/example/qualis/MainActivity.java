@@ -1,5 +1,7 @@
 package com.example.qualis;
 
+import static com.example.qualis.R.id.button_conferencias_section;
+import static com.example.qualis.R.id.button_correlacao_section;
 import static com.example.qualis.R.id.button_periodicos_section;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,8 +32,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case button_periodicos_section:
-                Intent intent = new Intent(this, PeriodicoSection.class);
-                startActivity(intent);
+                Intent periodicosIntent = new Intent(this, PeriodicoSection.class);
+                startActivity(periodicosIntent);
+            case button_conferencias_section:
+                Intent conferenciasIntent = new Intent(this, ConferenciaSection.class);
+                startActivity(conferenciasIntent);
+            case button_correlacao_section:
+                Intent correlacaoIntent = new Intent(this, ConferenciaSection.class);
+                startActivity(correlacaoIntent);
         }
     }
 }

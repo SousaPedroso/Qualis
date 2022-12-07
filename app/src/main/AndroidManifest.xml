@@ -13,6 +13,14 @@
         android:theme="@style/Theme.Qualis"
         tools:targetApi="31">
         <activity
+            android:name=".ConferenciaSection"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.qualis.MainActivity" />
+        </activity>
+        <activity
             android:name=".PeriodicoSection"
             android:exported="false"
             android:parentActivityName=".MainActivity">
