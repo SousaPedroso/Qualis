@@ -5,10 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".PeriodicoSection">
 
-    <include
-        android:id="@+id/include2"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        layout="@layout/sections_base"/>
+    <include layout="@layout/sections_base"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
