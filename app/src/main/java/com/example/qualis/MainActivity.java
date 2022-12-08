@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button buttonPeriodicos = findViewById(button_periodicos_section);
         buttonPeriodicos.setOnClickListener(this);
-        Button buttonConferencias = findViewById(R.id.button_conferencias_section);
+        Button buttonConferencias = findViewById(button_conferencias_section);
         buttonConferencias.setOnClickListener(this);
-        Button buttonCorrelacao = findViewById(R.id.button_correlacao_section);
+        Button buttonCorrelacao = findViewById(button_correlacao_section);
         buttonCorrelacao.setOnClickListener(this);
     }
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent conferenciasIntent = new Intent(this, ConferenciaSection.class);
                 startActivity(conferenciasIntent);
             case button_correlacao_section:
-                Intent correlacaoIntent = new Intent(this, ConferenciaSection.class);
+                Intent correlacaoIntent = new Intent(this, Correlacao_Section.class);
                 startActivity(correlacaoIntent);
         }
     }

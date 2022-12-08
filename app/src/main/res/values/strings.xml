@@ -8,4 +8,6 @@
     <string name="about_edu_search_content">PESQUISE OS QUALIS DE PERIÓDICOS E CONFERÊNCIAS E VEJA A CORRELAÇÃO COM A ÁREA DA COMPUTAÇÃO.</string>
     <string name="button_update_db">Atualizar Dados</string>
     <string name="update_db_content">Data da última atualização:</string>
+    <string name="button_filter_section_content">Filtro</string>
+    <string name="button_sort_section_content">Maior Extrato</string>
 </resources>
