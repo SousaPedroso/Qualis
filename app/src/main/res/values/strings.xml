@@ -4,4 +4,10 @@
     <string name="content_periodicos_section">Periódicos</string>
     <string name="content_conferencias_section">CONFERÊNCIAS</string>
     <string name="content_correlacao_section">CORRELAÇÃO COM + 1 ÁREA</string>
+    <string name="logo_edu_search">Logo do Edu Search</string>
+    <string name="about_edu_search_content">PESQUISE OS QUALIS DE PERIÓDICOS E CONFERÊNCIAS E VEJA A CORRELAÇÃO COM A ÁREA DA COMPUTAÇÃO.</string>
+    <string name="button_update_db">Atualizar Dados</string>
+    <string name="update_db_content">Data da última atualização:</string>
+    <string name="button_filter_section_content">Filtro</string>
+    <string name="button_sort_section_content">Maior Extrato</string>
 </resources>

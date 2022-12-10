@@ -13,12 +13,25 @@
         android:theme="@style/Theme.Qualis"
         tools:targetApi="31">
         <activity
-            android:name=".PeriodicoSection"
-            android:exported="false"
-            android:parentActivityName=".MainActivity">
+            android:name=".Correlacao_Section"
+            android:exported="false">
             <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.qualis.MainActivity" />
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ConferenciaSection"
+            android:exported="true">
+            <meta-data
+                android:name=".ConferenciaSection"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PeriodicoSection"
+            android:exported="true">
+            <meta-data
+                android:name=".PeriodicoSection"
+                android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"

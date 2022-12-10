@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".PeriodicoSection">
+
+    <include
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/screen_base" />
+
+    <Button
+        android:id="@+id/button_filter_section"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_tune_24"
+        android:fontFamily="@font/inter"
+        android:text="@string/button_filter_section_content"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/button_sort_periodicos"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_swap_vert_24"
+        android:fontFamily="@font/inter"
+        android:text="@string/button_sort_section_content"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toEndOf="@+id/button_filter_section"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/button_search_section"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:fontFamily="@font/inter"
+        android:text="Buscar..."
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
