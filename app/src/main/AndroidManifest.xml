@@ -27,7 +27,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".PeriodicoSection"
+            android:name=".periodicos.PeriodicoSection"
             android:exported="true">
             <meta-data
                 android:name=".PeriodicoSection"
