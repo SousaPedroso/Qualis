@@ -10,4 +10,6 @@
     <string name="update_db_content">Data da última atualização:</string>
     <string name="button_filter_section_content">Filtro</string>
     <string name="button_sort_section_content">Maior Extrato</string>
+    <string name="periodico_column">Periódico</string>
+    <string name="extrato_capes">Extrato Capes</string>
 </resources>
