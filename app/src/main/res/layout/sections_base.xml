@@ -13,12 +13,13 @@
         android:layout_height="match_parent"
         layout="@layout/screen_base" />
 
-    <Button
-        android:id="@+id/button_filter_section"
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginTop="108dp"
         android:backgroundTint="@color/white"
+        android:entries="@array/categories"
         android:drawableLeft="@drawable/ic_baseline_tune_24"
         android:fontFamily="@font/inter"
         android:text="@string/button_filter_section_content"
@@ -52,22 +53,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:strokeWidth="1dp" />
 
-    <Button
-        android:id="@+id/button_search_section"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/white"
-        android:drawableLeft="@drawable/ic_baseline_search_24"
-        android:fontFamily="@font/inter"
-        android:text="Buscar..."
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:strokeWidth="1dp" />
+        tools:layout_editor_absoluteY="-1dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

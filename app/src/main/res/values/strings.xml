@@ -12,4 +12,17 @@
     <string name="button_sort_section_content">Maior Extrato</string>
     <string name="periodico_column">Periódico</string>
     <string name="extrato_capes">Extrato Capes</string>
+
+    <string-array name="categories">
+        <item>Todos</item>
+        <item>A1</item>
+        <item>A2</item>
+        <item>B1</item>
+        <item>B2</item>
+        <item>B3</item>
+        <item>B4</item>
+        <item>B5</item>
+        <item>C</item>
+    </string-array>
+
 </resources>
