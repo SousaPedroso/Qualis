@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.qualis.ConferenciaSection;
+import com.example.qualis.correlacao.CorrelacaoSection;
 import com.example.qualis.R;
 
 import android.content.Intent;
@@ -36,7 +37,7 @@ public class PeriodicoSection extends AppCompatActivity{
 
         Button buttonCorrelacao = findViewById(button_correlacao_section);
         buttonCorrelacao.setOnClickListener(view -> startActivity(
-                new Intent(PeriodicoSection.this, ConferenciaSection.class))
+                new Intent(PeriodicoSection.this, CorrelacaoSection.class))
         );
 
         RecyclerView recyclerView = findViewById(R.id.periodicos_recycler_view);

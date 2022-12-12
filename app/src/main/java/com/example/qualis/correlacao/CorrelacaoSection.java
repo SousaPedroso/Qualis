@@ -5,14 +5,17 @@ import static com.example.qualis.R.id.button_correlacao_section;
 import static com.example.qualis.R.id.button_periodicos_section;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.qualis.ConferenciaSection;
-import com.example.qualis.R;
 import com.example.qualis.periodicos.PeriodicoSection;
+import com.example.qualis.R;
 
 public class CorrelacaoSection extends AppCompatActivity {
 
@@ -35,5 +38,16 @@ public class CorrelacaoSection extends AppCompatActivity {
         buttonCorrelacao.setOnClickListener(view -> startActivity(
                 new Intent(CorrelacaoSection.this, CorrelacaoSection.class))
         );
+
+        RecyclerView recyclerView = findViewById(R.id.correlacoes_recycler_view);
+        final CorrelacaoListAdapter adapter = new CorrelacaoListAdapter(this);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        CorrelacaoViewModel correlacaoViewModel = new ViewModelProvider(this).get(CorrelacaoViewModel.class);
+        correlacaoViewModel.getAllCorrelacoes().observe(this, words -> {
+            // Update the cached copy of the words in the adapter.
+            adapter.setCorrelacoes(words);
+        });
     }
 }

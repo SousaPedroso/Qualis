@@ -11,5 +11,6 @@
     <string name="button_filter_section_content">Filtro</string>
     <string name="button_sort_section_content">Maior Extrato</string>
     <string name="periodico_column">Periódico</string>
+    <string name="area_column">Área</string>
     <string name="extrato_capes">Extrato Capes</string>
 </resources>
