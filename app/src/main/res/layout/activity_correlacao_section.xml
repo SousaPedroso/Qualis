@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Correlacao_Section">
+    tools:context=".correlacao.CorrelacaoSection">
 
     <include layout="@layout/sections_base"/>
 

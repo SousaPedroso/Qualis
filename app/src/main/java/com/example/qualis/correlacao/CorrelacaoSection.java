@@ -1,4 +1,4 @@
-package com.example.qualis;
+package com.example.qualis.correlacao;
 
 import static com.example.qualis.R.id.button_conferencias_section;
 import static com.example.qualis.R.id.button_correlacao_section;
@@ -10,9 +10,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.qualis.ConferenciaSection;
+import com.example.qualis.R;
 import com.example.qualis.periodicos.PeriodicoSection;
 
-public class Correlacao_Section extends AppCompatActivity {
+public class CorrelacaoSection extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,17 +23,17 @@ public class Correlacao_Section extends AppCompatActivity {
 
         Button buttonPeriodicos = findViewById(button_periodicos_section);
         buttonPeriodicos.setOnClickListener(view -> startActivity(
-                new Intent(Correlacao_Section.this, PeriodicoSection.class))
+                new Intent(CorrelacaoSection.this, PeriodicoSection.class))
         );
 
         Button buttonConferencias = findViewById(button_conferencias_section);
         buttonConferencias.setOnClickListener(view -> startActivity(
-                new Intent(Correlacao_Section.this, ConferenciaSection.class))
+                new Intent(CorrelacaoSection.this, ConferenciaSection.class))
         );
 
         Button buttonCorrelacao = findViewById(button_correlacao_section);
         buttonCorrelacao.setOnClickListener(view -> startActivity(
-                new Intent(Correlacao_Section.this, Correlacao_Section.class))
+                new Intent(CorrelacaoSection.this, CorrelacaoSection.class))
         );
     }
 }
