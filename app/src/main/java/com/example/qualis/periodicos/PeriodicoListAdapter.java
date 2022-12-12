@@ -21,7 +21,7 @@ public class PeriodicoListAdapter extends RecyclerView.Adapter<PeriodicoListAdap
 
     @Override
     public PeriodicoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = mInflater.inflate(R.layout.recyclerview_item, parent, false);
+        View itemView = mInflater.inflate(R.layout.recyclerview_item_periodico, parent, false);
         return new PeriodicoViewHolder(itemView);
     }
 
