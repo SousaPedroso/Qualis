@@ -10,6 +10,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.qualis.periodicos.PeriodicoSection;
+
 public class Correlacao_Section extends AppCompatActivity {
 
     @Override
@@ -29,7 +31,7 @@ public class Correlacao_Section extends AppCompatActivity {
 
         Button buttonCorrelacao = findViewById(button_correlacao_section);
         buttonCorrelacao.setOnClickListener(view -> startActivity(
-                new Intent(Correlacao_Section.this, ConferenciaSection.class))
+                new Intent(Correlacao_Section.this, Correlacao_Section.class))
         );
     }
 }

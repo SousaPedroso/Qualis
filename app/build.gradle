@@ -36,4 +36,18 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
+
+    // Lifecycle components (specifics)
+    // See (https://stackoverflow.com/questions/68242855/failed-to-resolve-android-arch-lifecycleextensions2-2-5)
+    // Outdated android studio tutorial
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.archLifecycleVersionersion"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.archLifecycleVersionersion"
+    // Annotation processor
+    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.archLifecycleVersionersion"
 }
