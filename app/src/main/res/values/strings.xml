@@ -13,6 +13,7 @@
     <string name="periodico_column">Periódico</string>
     <string name="area_column">Área</string>
     <string name="extrato_capes">Extrato Capes</string>
+    <string name="filter_image_content">Imagem de filtro de qualis</string>
 
     <string-array name="categories">
         <item>Todos</item>

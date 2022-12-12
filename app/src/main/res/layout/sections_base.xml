@@ -9,18 +9,18 @@
 
     <include
         android:id="@+id/include"
+        layout="@layout/screen_base"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/screen_base" />
+        android:layout_height="match_parent" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="108dp"
-        android:backgroundTint="@color/white"
-        android:entries="@array/categories"
+        android:layout_height="40dp"
+        android:layout_marginTop="113dp"
+        android:background="@drawable/background_spinner"
         android:drawableLeft="@drawable/ic_baseline_tune_24"
+        android:entries="@array/categories"
         android:fontFamily="@font/inter"
         android:text="@string/button_filter_section_content"
         android:textAlignment="center"
@@ -49,20 +49,31 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.754"
-        app:layout_constraintStart_toEndOf="@+id/button_filter_section"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeWidth="1dp" />
-
 
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-1dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/image_filter_periodicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/filter_image_content"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/spinner"
+        app:srcCompat="@drawable/ic_baseline_tune_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
