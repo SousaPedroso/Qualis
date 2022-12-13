@@ -5,40 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAlignment="center"
+    android:background="@color/app_background"
     tools:context=".periodicos.PeriodicoSection">
-
-    <include
-        android:id="@+id/include"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/screen_base" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="108dp"
-        android:backgroundTint="@color/white"
-        android:entries="@array/categories"
+        android:layout_height="38dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/background_spinner"
         android:drawableLeft="@drawable/ic_baseline_tune_24"
+        android:entries="@array/categories"
         android:fontFamily="@font/inter"
         android:text="@string/button_filter_section_content"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/include"
-        app:layout_constraintHorizontal_bias="0.199"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
         app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/button_sort_periodicos"
         android:layout_width="130dp"
         android:layout_height="50dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
         android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/ic_baseline_swap_vert_24"
         android:fontFamily="@font/inter"
@@ -48,21 +42,99 @@
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.754"
-        app:layout_constraintStart_toEndOf="@+id/button_filter_section"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
         app:strokeWidth="1dp" />
-
-
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_searchview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-1dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:searchHintIcon="@drawable/ic_baseline_search_24"
+        app:searchIcon="@drawable/ic_baseline_search_24" />
+
+    <ImageView
+        android:id="@+id/image_filter_periodicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/spinner"
+        app:srcCompat="@drawable/ic_baseline_tune_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sections_recycler_view"
+        android:layout_width="400dp"
+        android:layout_height="455dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+    <Button
+        android:id="@+id/button_periodicos_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:width="132dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/content_periodicos_section"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/button_conferencias_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button_periodicos_section"
+        android:width="139dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/content_conferencias_section"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_periodicos_section"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/button_correlacao_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:width="141dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/content_correlacao_section"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_conferencias_section"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
