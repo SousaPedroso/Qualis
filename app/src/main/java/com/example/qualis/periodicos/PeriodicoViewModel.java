@@ -14,6 +14,8 @@ public class PeriodicoViewModel extends AndroidViewModel {
 
     private static LiveData<List<Periodico>> mAllPeriodicos;
 
+    public void update() {mRepository.update();}
+
     public PeriodicoViewModel (Application application) {
         super(application);
         mRepository = new PeriodicoRepository(application);

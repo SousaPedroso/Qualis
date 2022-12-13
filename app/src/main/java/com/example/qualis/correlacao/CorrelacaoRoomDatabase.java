@@ -2,6 +2,7 @@ package com.example.qualis.correlacao;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.room.Dao;
@@ -23,8 +24,8 @@ public abstract class CorrelacaoRoomDatabase extends RoomDatabase{
             new RoomDatabase.Callback(){
 
                 @Override
-                public void onOpen (@NonNull SupportSQLiteDatabase db){
-                    super.onOpen(db);
+                public void onCreate (@NonNull SupportSQLiteDatabase db){
+                    super.onCreate(db);
                     new PopulateDbAsync(INSTANCE).execute();
                 }
             };
@@ -52,6 +53,7 @@ public abstract class CorrelacaoRoomDatabase extends RoomDatabase{
             try {
                 JSONObject json = JsonHandler.readJsonFromUrl(urlCorrelacoes);
                 JSONArray dataList = json.getJSONArray("data");
+                Log.e("debug", "POPULOU O BANCO DE DADOS!");
                 for (int i = 0; i < dataList.length(); i++) {
                     JSONArray currentData = dataList.getJSONArray(i);
                     Correlacao correlacao = new Correlacao(

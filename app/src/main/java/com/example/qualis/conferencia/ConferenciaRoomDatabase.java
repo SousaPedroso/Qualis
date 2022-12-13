@@ -2,6 +2,7 @@ package com.example.qualis.conferencia;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.room.Database;
@@ -23,8 +24,8 @@ public abstract class ConferenciaRoomDatabase extends RoomDatabase {
             new Callback(){
 
                 @Override
-                public void onOpen (@NonNull SupportSQLiteDatabase db){
-                    super.onOpen(db);
+                public void onCreate (@NonNull SupportSQLiteDatabase db){
+                    super.onCreate(db);
                     new PopulateDbAsync(INSTANCE).execute();
                 }
             };
@@ -53,6 +54,7 @@ public abstract class ConferenciaRoomDatabase extends RoomDatabase {
             try {
                 JSONObject json = JsonHandler.readJsonFromUrl(urlConferencias);
                 JSONArray dataList = json.getJSONArray("data");
+                Log.e("debug", "CRIOU O BANCO DE DADOS!");
                 for (int i = 0; i < dataList.length(); i++) {
                     JSONArray currentData = dataList.getJSONArray(i);
                     Conferencia conferencia = new Conferencia(

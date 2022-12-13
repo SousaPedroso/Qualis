@@ -14,6 +14,8 @@ public class CorrelacaoViewModel extends AndroidViewModel {
 
     private LiveData<List<Correlacao>> mAllCorrelacoes;
 
+    public void update() {mRepository.update();}
+
     public CorrelacaoViewModel (Application application) {
         super(application);
         mRepository = new CorrelacaoRepository(application);
