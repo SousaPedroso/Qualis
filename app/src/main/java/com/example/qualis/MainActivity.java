@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.qualis.conferencia.ConferenciaSection;
+import com.example.qualis.correlacao.CorrelacaoSection;
 import com.example.qualis.periodicos.PeriodicoSection;
 
 public class MainActivity extends AppCompatActivity{
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity{
 
         Button buttonCorrelacao = findViewById(button_correlacao_section);
         buttonCorrelacao.setOnClickListener(view -> startActivity(
-                new Intent(MainActivity.this, ConferenciaSection.class))
+                new Intent(MainActivity.this, CorrelacaoSection.class))
         );
     }
 }
