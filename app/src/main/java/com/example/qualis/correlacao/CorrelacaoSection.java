@@ -39,7 +39,7 @@ public class CorrelacaoSection extends AppCompatActivity {
                 new Intent(CorrelacaoSection.this, CorrelacaoSection.class))
         );
 
-        RecyclerView recyclerView = findViewById(R.id.correlacoes_recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.sections_recycler_view);
         final CorrelacaoListAdapter adapter = new CorrelacaoListAdapter(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
