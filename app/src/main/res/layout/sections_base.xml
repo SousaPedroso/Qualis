@@ -55,14 +55,16 @@
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_searchview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.591"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:searchHintIcon="@drawable/ic_baseline_search_24"
+        app:searchIcon="@drawable/ic_baseline_search_24" />
 
     <ImageView
         android:id="@+id/image_filter_periodicos"
