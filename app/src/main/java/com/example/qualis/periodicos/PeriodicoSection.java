@@ -46,7 +46,7 @@ public class PeriodicoSection extends AppCompatActivity{
                 new Intent(PeriodicoSection.this, CorrelacaoSection.class))
         );
 
-        RecyclerView recyclerView = findViewById(R.id.periodicos_recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.sections_recycler_view);
         final PeriodicoListAdapter adapter = new PeriodicoListAdapter(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
