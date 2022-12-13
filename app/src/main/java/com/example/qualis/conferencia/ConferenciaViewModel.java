@@ -69,4 +69,6 @@ public class ConferenciaViewModel extends AndroidViewModel {
     LiveData<List<Conferencia>> getAllConferencias() { return mAllConferencias; }
 
     public void insert(Conferencia conferencia) { mRepository.insert(conferencia); }
+
+    public void update() {mRepository.update();}
 }
