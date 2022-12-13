@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.qualis.conferencia.ConferenciaSection;
 import com.example.qualis.periodicos.PeriodicoSection;
 
 public class MainActivity extends AppCompatActivity{

@@ -1,15 +1,19 @@
-package com.example.qualis;
+package com.example.qualis.conferencia;
 
 import static com.example.qualis.R.id.button_conferencias_section;
 import static com.example.qualis.R.id.button_correlacao_section;
 import static com.example.qualis.R.id.button_periodicos_section;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.qualis.R;
 import com.example.qualis.correlacao.CorrelacaoSection;
 import com.example.qualis.periodicos.PeriodicoSection;
 
@@ -34,5 +38,16 @@ public class ConferenciaSection extends AppCompatActivity {
         buttonCorrelacao.setOnClickListener(view -> startActivity(
                 new Intent(ConferenciaSection.this, CorrelacaoSection.class))
         );
+
+        RecyclerView recyclerView = findViewById(R.id.conferencias_recycler_view);
+        final ConferenciaListAdapter adapter = new ConferenciaListAdapter(this);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        ConferenciaViewModel conferenciaViewModel = new ViewModelProvider(this).get(ConferenciaViewModel.class);
+        conferenciaViewModel.getAllConferencias().observe(this, words -> {
+            // Update the cached copy of the words in the adapter.
+            adapter.setConferencias(words);
+        });
     }
 }

@@ -13,7 +13,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-import com.example.qualis.ConferenciaSection;
+import com.example.qualis.conferencia.ConferenciaSection;
 import com.example.qualis.periodicos.PeriodicoSection;
 import com.example.qualis.R;
 

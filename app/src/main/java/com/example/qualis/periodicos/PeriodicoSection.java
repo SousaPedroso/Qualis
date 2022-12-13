@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.qualis.ConferenciaSection;
+import com.example.qualis.conferencia.ConferenciaSection;
 import com.example.qualis.correlacao.CorrelacaoSection;
 import com.example.qualis.R;
 
