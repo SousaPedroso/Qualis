@@ -13,8 +13,12 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.qualis.conferencia.ConferenciaSection;
+
 import com.example.qualis.conferencia.ConferenciaViewModel;
 import com.example.qualis.correlacao.CorrelacaoViewModel;
+
+import com.example.qualis.correlacao.CorrelacaoSection;
+
 import com.example.qualis.periodicos.PeriodicoSection;
 import com.example.qualis.periodicos.PeriodicoViewModel;
 
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity{
 
         Button buttonCorrelacao = findViewById(button_correlacao_section);
         buttonCorrelacao.setOnClickListener(view -> startActivity(
-                new Intent(MainActivity.this, ConferenciaSection.class))
+                new Intent(MainActivity.this, CorrelacaoSection.class))
         );
 
         Button buttonAtualizar = findViewById(R.id.button_update_database);
