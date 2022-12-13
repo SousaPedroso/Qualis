@@ -39,7 +39,7 @@ public class ConferenciaSection extends AppCompatActivity {
                 new Intent(ConferenciaSection.this, CorrelacaoSection.class))
         );
 
-        RecyclerView recyclerView = findViewById(R.id.conferencias_recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.sections_recycler_view);
         final ConferenciaListAdapter adapter = new ConferenciaListAdapter(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
