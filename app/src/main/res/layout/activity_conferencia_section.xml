@@ -18,9 +18,9 @@
         android:fontFamily="@font/inter"
         android:text="@string/conferencia_column"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/extrato_capes_column"
-        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintHorizontal_bias="0.100"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/include2" />
 
@@ -28,13 +28,13 @@
         android:id="@+id/extrato_capes_column"
         android:layout_width="55dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="120dp"
         android:fontFamily="@font/inter"
         android:text="@string/extrato_capes"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintHorizontal_bias="0.982"
         app:layout_constraintStart_toStartOf="@+id/include2"
         app:layout_constraintTop_toTopOf="parent"/>
 
